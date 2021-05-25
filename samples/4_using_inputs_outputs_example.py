@@ -31,7 +31,7 @@ outputs = x
 model4_1 = tf.keras.Model(inputs, outputs)
 model4_1.summary()
 
-''' 모델 전체의 파라미터 수를 35000개 이하로 '''
+''' 모델 조정 '''
 inputs = tf.keras.Input(shape=(32, 32, 3))
 x2 = inputs
 x2 = layers.Conv2D(32, 3, activation='relu', padding='valid')(x2)
